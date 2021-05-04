@@ -1,0 +1,581 @@
+
+
+section {
+    /* height: 100%; */
+    display: block;
+    padding-bottom: 32%;
+}
+
+#intro-container {
+    width: 100%;
+    height: 100%;
+}
+
+section#no-padding {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.equipose {
+    height: 120vh;
+    font-family: Caxton;
+}
+
+#equi-text {
+    font-size: 30px;
+}
+
+.section__wrapper {
+    padding: 50px;
+}
+
+.vl {
+    background-image: linear-gradient(gray, gray);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Notation */
+
+.notations {
+    flex: 0 0 100%;
+    height: 130vh;
+    background-color: black;
+}
+
+.notations__wrapper {
+    margin: 20px;
+    padding: 50px;
+}
+
+.notations__title {
+    flex: 25%;
+}
+
+/* Image Titles */
+.titles {
+    width: 35%;
+    padding: 4%;
+}
+
+.diagrams {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.diagram {
+    width: 320px;
+    height: 420px;
+    flex-basis: 0 0 33%;
+}
+
+
+.diagram+.diagram {
+    margin-left: 8%;
+}
+
+.notation_1 {
+    background-position: center;
+    background-size: contain;
+    background-image: url("../imgs/balance/notation-1.svg");
+    background-repeat: no-repeat;
+}
+
+.notation_1:hover {
+    background-image: url("../imgs/balance/pathway-1.jpg");
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.notation_2 {
+    background-position: left;
+    background-size: contain;
+    background-image: url("../imgs/balance/notation-2.svg");
+    background-repeat: no-repeat;
+}
+
+.notation_2:hover {
+    background-image: url("../imgs/balance/pathway-2.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.notation_3 {
+    background-position: left;
+    background-size: contain;
+    background-image: url("../imgs/balance/notation-3.svg");
+    background-repeat: no-repeat;
+}
+
+.notation_3:hover {
+    background-image: url("../imgs/balance/pathway-3.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* -------- Intro --------- */
+
+.balance__intro {
+    background-color: black;
+    margin-bottom: 10%;
+    height: 110vh;
+}
+
+.balance__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 6em;
+}
+
+.balance__intro-text {
+    flex: 0 0 85%;
+    height: max-content;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: 80px;
+}
+
+.section-copy {
+    color: white;
+    display: flex;
+    max-width: 520px;
+}
+
+.section-copy p {
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+    width: 82%;
+    margin-left: 11%;
+}
+
+.balance__intro-img {
+    flex: 0 0 20%;
+    margin-left: 5%;
+}
+
+.intro-notation {
+    width: 140px;
+    margin-top: 20px;
+}
+
+.intro-state-title {
+    width: 50%;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+@media screen and(max-width: 780px) {
+    .balance__intro-img {
+        margin-left: 0;
+    }
+
+
+    .balance__intro-text {
+        flex: 0 0 72%;
+    }
+
+}
+
+/* -------- Main --------- */
+
+.main {
+    display: block;
+}
+
+.balance__header {
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    padding-top: 120px;
+    background-color: white;
+}
+
+.balance__copy {
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    padding: 12%;
+    align-content: center;
+}
+
+.balance__copy p,
+span {
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.balance__img {
+    display: flex;
+    justify-content: center;
+}
+
+.half-column {
+    display: flex;
+}
+
+.full {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.half {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+/* Styling image Sizes */
+
+.img-full {
+    width: 100%;
+}
+
+.img-large {
+    width: 100%;
+}
+
+.img-medium {
+    width: 60%;
+}
+
+.img-half {
+    width: 60%;
+}
+
+.three-col {
+    display: flex;
+    flex: 0 0 100%;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+/* -------- Parallax Scene Styling --------- */
+.parallax {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.equipose {
+    display: flex;
+    width: 100%;
+    margin-right: 30px;
+}
+
+p#equi {
+    font-family: Caxton;
+    font-size: 48px;
+}
+
+p#pose {
+    font-family: Caxton;
+    font-size: 48px;
+    margin-left: 300px;
+}
+
+
+p#intro {
+    max-width: 560px;
+    line-height: 150%;
+}
+
+
+/* 
+#ps-1 {
+    margin-right:300px;
+} */
+
+#ps-2 {
+    margin-left: 320px;
+
+}
+
+/* -------- Style text blocks --------- */
+
+.full-width {
+    font-size: 48px;
+    font-family: HelveticaNeue;
+    background-color: white;
+    padding: 5% 15%;
+}
+
+.half-width-txt {
+    width: 50%;
+    line-height: 115%;
+    background-color: white;
+    padding: 2em;
+}
+
+#end {
+    font-family: Caxton;
+    font-size: 32px;
+    background-color: white;
+}
+
+
+@keyframes loop {
+    0% {
+        transform-origin: 0 50%;
+        transform: scale3d(0, 1, 1);
+    }
+
+    50% {
+        transform-origin: 0 50%;
+        transform: scale3d(1, 1, 1);
+    }
+
+    51% {
+        transform-origin: 100% 50%;
+    }
+
+    100% {
+        transform-origin: 100% 50%;
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.hover-reveal {
+    position: fixed;
+    width: 200px;
+    height: 150px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.hover-reveal__inner,
+.hover-reveal__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hover-reveal__deco {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #181314;
+}
+
+.hover-reveal__img {
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* -------- Video Timestamps --------- */
+
+.video-player__container {
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.video-player {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+
+#bal-vid {
+    width: 100%;
+    height: 100%;
+}
+
+
+.column {
+    width: 20%;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+}
+
+.btn {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+
+#path-1 {
+    border: 1px solid white;
+    background-image: url('../imgs/balance/path-1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: 1px solid black;
+}
+
+#path-2 {
+    border: 1px solid white;
+    background-image: url('../imgs/balance/path-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-left: 1px solid black;
+}
+
+#path-3 {
+    border: 1px solid white;
+    background-image: url('../imgs/balance/path-3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 1px solid black;
+}
+
+#path-4 {
+    border: 1px solid white;
+    background-image: url('../imgs/balance/path-4.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-right: 1px solid black;
+}
+
+.column a:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.balance-vid {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+.next-state {
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.next-state-btn {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    padding: 5%;
+}
+
+#inf-state {
+    width: 200px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.video-title {
+    padding: 2em;
+}
+
+/*Audio Player */
+
+.audioPlayer {
+    bottom: 25px;
+    left: 40px;
+    position: fixed;
+    z-index: 9999;
+}
+
+#pauseWhite,
+#pauseBlack {
+    width: 35px;
+    height: 35px;
+}
+
+/*Navigation */
+
+.nav {
+    bottom:60px;
+    left:40px;
+    display: flex;
+    width:max-content;
+    position:fixed;
+    z-index: 9999;
+}
+
+.toc {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/toc.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    width:60px;
+    height:50px;
+    margin-left:10px;
+}
+
+.backToTop {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../imgs/top.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    width:55px;
+    height:20px;
+    margin-left:12px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
