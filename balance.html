@@ -1,0 +1,300 @@
+<!--
+
+██╗██╗░░░██╗███████╗██╗░██████╗███╗░░░███╗
+██║╚██╗░██╔╝██╔════╝██║██╔════╝████╗░████║
+██║░╚████╔╝░█████╗░░██║╚█████╗░██╔████╔██║
+██║░░╚██╔╝░░██╔══╝░░██║░╚═══██╗██║╚██╔╝██║
+██║░░░██║░░░███████╗██║██████╔╝██║░╚═╝░██║
+╚═╝░░░╚═╝░░░╚══════╝╚═╝╚═════╝░╚═╝░░░░░╚═╝
+ʙᴀʟᴀɴᴄᴇ
+-->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<head>
+    <meta charset="utf-8">
+    <title>Iyeism: Balance</title>
+    <link rel="stylesheet" type="text/css" href="./style/global.css" />
+    <link rel="stylesheet" type="text/css" href="./style/balance.css" />
+    <link rel="stylesheet" type="text/css" href="./style/progress-bar.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script nomodule
+        src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"
+        integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+</head>
+
+
+<body>
+
+    <div class="audioPlayer" id="stick" data-scroll-section>
+        <p data-scroll data-scroll-sticky data-scroll-target="#stick">
+            <audio id="audio" hidden src="./sounds/balance.wav" type="audio/mpeg"></audio>
+            <button id="playAudioWhite"><img src="./imgs/play-white.svg" id="pauseWhite"></button>
+            <button id="playAudioBlack"><img src="./imgs/play-black.svg" id="pauseBlack"></button>
+        </p>
+    </div>
+
+    <div class="nav" id="nav-sticky" data-scroll-section>
+        <p data-scroll data-scroll-sticky data-scroll-target="#nav-sticky">
+            <button class="backToTop" id="backToTop" onClick=backToTop()></button>
+            <a href="index.html"><button class="toc" id="toc"></button></a>
+        </p>
+    </div>
+
+    <div data-scroll-container>
+        <main class="balance" id="top-target">
+            <section class="balance__intro" id="no-padding">
+                <div class="balance__container" id="balance-container">
+                    <div class="balance__intro-text">
+                        <img src="./imgs/balance/bal_title.svg" class="intro-state-title">
+                        <div class="section-copy">
+                            <p id="intro">Balance is a meditative but active state, a state that focuses on maintaining
+                                the equilibrium in the mind-body.</p>
+                        </div>
+                    </div>
+                    <div class="balance__intro-img">
+                        <img src="./imgs/balance/intro_notation.png" class="intro-notation">
+                    </div>
+                </div>
+            </section>
+
+            <div class="vl">
+                <section class="intro-section" id="no-padding">
+                    <div class="vl" data-scroll-target>
+                        <div id="intro-container">
+                            <div class="balance__header">
+                                <h1>
+                                    Balance Begins, Balance Ends</h1>
+                            </div>
+                            <div class="section__wrapper">
+                                <!-- TODO: Add circle spans-->
+                                <div class="balance__copy">
+                                    <p>Balance begins as we are conceived into this life and continues in our early
+                                        years –
+                                        innocent, playful, and intuitive. Living for the moment, only for the moment.
+                                        Nothing
+                                        less and nothing more, unequivocally yourself – balanced. We did not have to try
+                                        – we
+                                        just were. We just did things as we pleased, whenever we pleased, time was never
+                                        a
+                                        factor. We did not see behind us, nor in front of us, we just saw what was
+                                        besides us –
+                                        present.
+                                    </p>
+                                    <p>We just did things as we pleased, whenever we pleased, time was never a factor.
+                                        We did
+                                        not see behind us, nor in front of us, we just saw what was beside us. As we
+                                        progress
+                                        through life, we disconnect with this sense, and these moments of balance are
+                                        few and
+                                        far between.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="vl">
+                    <section>
+                        <div class="section__wrapper">
+                            <div class="balance__img">
+                                <img src="./imgs/balance/balance-1-progressive.jpg" class="img-half">
+                            </div>
+                        </div>
+                </div>
+                </section>
+
+                <section class="parallax">
+                    <div class="half-column" id="scene">
+                        <div class="parallax-img" data-depth="-2"><img src="./imgs/balance/balance-2-progressive.jpg"
+                                class="img-half" id="ps-1"></div>
+                        <div class="parllax-img" data-depth="2"><img src="./imgs/balance/balance-3-progressive.jpg"
+                                class="img-half" id="ps-2"></div>
+                </section>
+
+                <section>
+                    <div class="full">
+                        <img src="./imgs/balance/balance-4-progressive.jpg" class="img-full">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section__wrapper">
+                        <div class="balance__img">
+                            <img src="./imgs/balance/balance-5-progressive.jpg" class="img-half">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section__wrapper">
+                        <p class="full-width">
+                            Balance is dynamic and quiet - is the act to equipoise between opposing forces to find
+                            centeredness. This point is always shifting as new experiences arise, making an individual
+                            point of balance inherently different at any moment.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="equipose">
+                    <div class="section__wrapper three-col">
+                        <div id="equipose">
+                            <div class="parallax-img" data-depth="-1.2"><img
+                                    src="./imgs/balance/balance-6-progressive.jpg" class="img-large" id="eq-1"></div>
+                            <div class="parallax-img" data-depth="1.1">
+                                <p id="equi">EQUI</p>
+                            </div>
+                        </div>
+                        <div id="equipose-2">
+                            <div class="parallax-img" data-depth="-0.5"><img
+                                    src="./imgs/balance/balance-7-progressive.jpg" class="img-large" id="eq-2"></div>
+                        </div>
+                        <div id="equipose-3">
+                            <div class="parallax-img" data-depth="1.2"><img
+                                    src="./imgs/balance/balance-8-progressive.jpg" class="img-large" id="eq-3"></div>
+                            <div class="parallax-img" data-depth="-1.2">
+                                <p id="pose">POSE</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <section>
+                    <div class="full">
+                        <img src="./imgs/balance/balance-9-progressive.jpg" class="img-full">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section__wrapper">
+                        <div class="balance__img">
+                            <img src="./imgs/balance/balance-10-progressive.jpg" class="img-half">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="full">
+                        <img src="./imgs/balance/balance-11-progressive.jpg" class="img-full">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="full">
+                        <img src="./imgs/balance/balance-12-progressive.jpg" class="img-medium">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="full">
+                        <img src="./imgs/balance/balance-13-progressive.jpg" class="img-half">
+                    </div>
+                </section>
+
+                <section>
+                    <div class="section__wrapper">
+                        <div class="half">
+                            <p class="half-width-txt">There is no balance without knowing what it is like to be
+                                off-balanced at times. Maybe this is why counterbalance came to be - to resist and bring
+                                us back to balance when we have been gone for too long. Even when you disregard it,
+                                balance it is always there - spectating from afar, waiting for your inevitable return.
+                                Balance ends, so then later balance begins once again.</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <section>
+                <div class="section__wrapper">
+                    <div class="full">
+                        <p id="end"><h1>Beginning of the End, End of the Beginning</h1></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="notations" id="hover_state">
+                <div class="notations__wrapper">
+                    <div class="notations__title">
+                        <img src="./imgs/balance/notation-title.png" class="titles">
+                    </div>
+                    <div class="diagrams" data-fx="4">
+                        <div class="diagram notation_1"></div>
+                        <div class="diagram notation_2"></div>
+                        <div class="diagram notation_3"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="video" id="no-padding">
+                <div class="video-title">
+                    <span>
+                        State 1_ Performance</span>
+                </div>
+                <div class="video-player__container">
+                    <div class="column">
+                        <a href id="path-1-timestamp" onclick="playTimeStamp1();return false;">
+                            <div class="btn" id="path-1"></div>
+                        </a>
+                        <a href id="path-2-timestamp" onclick="playTimeStamp2();return false;">
+                            <div class="btn" id="path-2"></div>
+                        </a>
+                    </div>
+                    <div class="video-player">
+                        <div id="bal-vid">
+
+                            <iframe id="player1" src="https://player.vimeo.com/video/539435944?api=1" width="100%"
+                                height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                allow="autoplay"></iframe>
+                            <script src="https://player.vimeo.com/api/player.js"></script>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <a href id="path-3-timestamp" onclick="playTimeStamp3();return false;">
+                            <div class="btn" id="path-3"></div>
+                        </a>
+                        <a href id="path-4-timestamp" onclick="playTimeStamp4();return false;">
+                            <div class="btn" id="path-4"></div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <section class="next-state" id="no-padding">
+                    <div class="next-state-btn">
+                        <a href="infinite.html" id="inifnite-state"><img id="inf-state"
+                                src="./imgs/toc/infinite-white.svg"></a>
+                    </div>
+                </section>
+            </section>
+    </div>
+    </main>
+
+    <script src="./js/charming.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/demo.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/videoplayer.js"></script>
+    <script type="text/javascript" src="./js/global.js"></script>
+    <!-- <script type="text/javascript" src="./js/audioplayer.js"></script> -->
+
+</body>
+
+</html>
